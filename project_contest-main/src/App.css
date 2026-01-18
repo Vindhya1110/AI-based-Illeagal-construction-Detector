@@ -1,0 +1,59 @@
+/* === Theme using data-bs-theme === */
+
+/* Light */
+body[data-bs-theme="light"] {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+body[data-bs-theme="light"] .card,
+body[data-bs-theme="light"] .container,
+body[data-bs-theme="light"] .page-section {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+/* Dark */
+body[data-bs-theme="dark"] {
+  background-color: #0d0d0d;
+  color: #eaeaea;
+}
+body[data-bs-theme="dark"] .card,
+body[data-bs-theme="dark"] .container,
+body[data-bs-theme="dark"] .page-section {
+  background-color: #111217;
+  color: #eaeaea;
+  border: 1px solid #222;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+
+/* Navbar transition & shadow */
+.navbar {
+  transition: background-color 0.25s ease;
+}
+
+/* Buttons */
+button, .btn {
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+button:hover, .btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Chatbot container */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* minor responsive chat width */
+@media (max-width: 500px) {
+  .chat-window {
+    width: 90% !important;
+    right: 5% !important;
+  }
+}
